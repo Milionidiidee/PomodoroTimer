@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "editor.rulers": [
+        {
+          "column": 80,    // spacing of 1st column from left
+          "color": "#b3b3b3"   // orange, Go Vols!
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Compila con g++ 11.3.0",
+			"command": "C:/mingw64/bin/g++.exe",
+			"args": [
+				"-g",
+				"-std=c++20",
+				"-pedantic-errors",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\rooster.exe",
+				"-DSFML_STATIC", 
+				"-I${workspaceFolder}\\SFML\\include",
+				"-L${workspaceFolder}\\SFML\\lib",
+				"-lsfml-graphics-s", "-lsfml-window-s",
+				"-lsfml-system-s", "-lopengl32",
+				"-lwinmm", "-lgdi32", "-lfreetype"
+			],
+			"options": {
+				"cwd": "C:/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilatore: C:/mingw64/bin/g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Compila con clang++ 14.0.3",
+			"command": "C:\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\rooster.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilatore: C:\\mingw64\\bin\\clang++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Compila con MSVC",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/std:c++latest",
+				"/EHsc",
+				"/Fe:",
+				"${fileDirname}\\rooster.exe",
+				"${workspaceFolder}\\*.cpp"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compilatore: cl.exe"
+		}
+	]
+}
