@@ -15,9 +15,9 @@
 				"-DSFML_STATIC", 
 				"-I${workspaceFolder}\\SFML\\include",
 				"-L${workspaceFolder}\\SFML\\lib",
-				"-lsfml-graphics-s", "-lsfml-window-s",
-				"-lsfml-system-s", "-lopengl32",
-				"-lwinmm", "-lgdi32", "-lfreetype"
+				"-lsfml-graphics-s", "-lsfml-window-s", "-lsfml-system-s", 
+				"-lopengl32", "-lwinmm", "-lgdi32", "-lfreetype"
+				//"-lsfml-graphics", "-lsfml-window", "-lsfml-audio", "-lsfml-network", "-lsfml-system"
 			],
 			"options": {
 				"cwd": "C:/mingw64/bin"
