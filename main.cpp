@@ -4,6 +4,8 @@
 
 int main()
 {
+    printf("Program Started\n");
+
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window", sf::Style::Default);
 
     // run the program as long as the window is open
@@ -17,18 +19,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
 
-            window.clear(sf::Color(123,123,123,255));
-            
-            sf::CircleShape shape(50.f);
-
-            // set the shape color to green
-            shape.setFillColor(sf::Color(100, 250, 50));
-            float radius = 50;
-            shape.setRadius(radius);
-            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-            shape.setPosition((float)mousePos.x - radius, 
-                (float)mousePos.y - radius);
-            window.draw(shape);
+            window.clear(sf::Color(245,72,64,255));
 
             window.display();
         }
